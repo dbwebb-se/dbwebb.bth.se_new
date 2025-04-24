@@ -1,0 +1,27 @@
+---
+title: Kurspaketet Programmering
+description: De kurser som ingår i kurspaketet Programmering.
+sidebar:
+    order: 300
+tableOfContents: false
+---
+import { CardGrid } from '@astrojs/starlight/components';
+import { prog } from '@components/courses.astro'
+import CustomCard from '@components/CustomCard.astro';
+
+Du läser dessa fyra kurser på halvfart under första året.
+
+<CardGrid >
+{
+    prog.map((item) => (
+        <CustomCard
+            title={item.title}
+            icon="information"
+            color={item.color}
+            description={item.description}
+            link={item.link}
+            when={item.studyPeriod}
+        />
+    ))
+  }
+</CardGrid>

@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+const { title, description, image, link } = Astro.props;
+---
+
+
+<Image src={image} alt="Mikael Roos" width="200" height="200" />
+<div class="p-4">
+  <h3 class="text-lg font-semibold mb-2">{title}</h3>
+  <p class="text-sm text-gray-600">{description}</p>
+</div>
+

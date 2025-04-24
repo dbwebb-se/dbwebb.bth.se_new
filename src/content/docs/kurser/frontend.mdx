@@ -1,0 +1,28 @@
+---
+title: Kurspaketet Frontend
+description: De kurser som ingår i kurspaketet Frontend.
+sidebar:
+    order: 200
+tableOfContents: false
+---
+import { CardGrid } from '@astrojs/starlight/components';
+import { frontend } from '@components/courses.astro'
+import CustomCard from '@components/CustomCard.astro';
+
+Du läser dessa fyra kurser på halvfart under första året. Kurserna har ett fokus på HTML, CSS och JavaScript. Du kommer lära dig grunderna och vidare tillämpningar inom användarvänlighet och utveckling för mobila applikationer.
+
+<CardGrid >
+{
+    frontend.map((item) => (
+        <CustomCard
+            title={item.title}
+            icon="information"
+            color={item.color}
+            description={item.description}
+            link={item.link}
+            when={item.studyPeriod}
+        />
+    ))
+  }
+</CardGrid>
+

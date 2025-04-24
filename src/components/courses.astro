@@ -1,0 +1,175 @@
+---
+import Course from "./course.astro"
+import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
+
+export const frontend = [
+  {
+    title: "Webtec",
+    description:
+      "HTML, CSS och JavaScript",
+    color: "#F4F7F3",
+    link: "https://webtec-2024.github.io/website/intro/",
+    studyPeriod: "LP1"
+  },
+  {
+    title: "JSux",
+    description:
+      "Ux design och klasser och skit.",
+    color: "#FFF7CC",
+    link: "#",
+    studyPeriod: "LP2"
+  },
+  {
+    title: "Webapp",
+    description:
+      "Webappar, CRUD och JWT.",
+    color: "#F6B0A3",
+    link: "#",
+    studyPeriod: "LP3"
+  },
+  {
+    title: "Projekt",
+    description:
+      "Här avslutar vi med ett projekt",
+    color: "#A3C8F6	",
+    link: "#",
+    studyPeriod: "LP4"
+  },
+];
+
+export const prog = [
+{
+    title: "Python",
+    description:
+      "Grundläggande programmering med Python",
+    color: "#F4F7F3",
+    link: "https://webtec-2024.github.io/website/intro/",
+    studyPeriod: "LP1"
+  },
+  {
+    title: "OOC#",
+    description:
+      "Objektorientering med CSharp",
+    color: "#FFF7CC",
+    link: "#",
+    studyPeriod: "LP2"
+  },
+  {
+    title: "Databas",
+    description:
+      "SQL, ER-modellering och prestanda",
+    color: "#F6B0A3",
+    link: "#",
+    studyPeriod: "LP3"
+  },
+  {
+    title: "Algo",
+    description:
+      "Sökalgoritmer, hashtables",
+    color: "#A3C8F6	",
+    link: "#",
+    studyPeriod: "LP4"
+  },
+];
+
+export const backend = [
+{
+    title: "Node",
+    description:
+      "Nodejs, klient/server",
+    color: "#F4F7F3",
+    link: "https://webtec-2024.github.io/website/intro/",
+    studyPeriod: "LP1"
+  },
+  {
+    title: "MVC",
+    description:
+      "Express, MongoDB",
+    color: "#FFF7CC",
+    link: "#",
+    studyPeriod: "LP2"
+  },
+  {
+    title: "Operations",
+    description:
+      "Driftsättning, säkerhet, BASH",
+    color: "#F6B0A3",
+    link: "#",
+    studyPeriod: "LP3"
+  },
+  {
+    title: "Projekt",
+    description:
+      "Här avslutar vi med ett projekt",
+    color: "#A3C8F6	",
+    link: "#",
+    studyPeriod: "LP4"
+  },
+];
+
+---
+<!-- 
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Våra kurser
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    En överblick över de kurser som erbjuds i olika kurspaket och genom campus- och distansprogrammet.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-5 mt-16 gap-16">
+    <h5 class="content-center text-2xl align-middle font-bold text-gray-900">Frontend</h5>
+  {
+    frontend.map((item) => (
+        <Course
+            title={item.title}
+            color={item.color}
+            description={item.description}
+            link={item.link}
+        />
+    ))
+  }
+
+  <h5 class="content-center text-2xl align-middle font-bold text-gray-900">Programmering</h5>
+  {
+    prog.map((item) => (
+        <Course
+            title={item.title}
+            color={item.color}
+            description={item.description}
+            link={item.link}
+        />
+    ))
+  }
+  <h5 class="content-center text-2xl align-middle font-bold text-gray-900">Backend</h5>
+  {
+    backend.map((item) => (
+        <Course
+            title={item.title}
+            color={item.color}
+            description={item.description}
+            link={item.link}
+        />
+    ))
+  }
+</div> -->
+<!-- <CardGrid>
+  {
+    Frontend.map((item) => (
+        <LinkCard
+            title={item.title}
+            // color={item.color}
+            // description={item.description}
+            href={item.link}
+        />
+    ))
+  }
+  <Card title="Check this out" icon="open-book">
+    Interesting content you want to highlight.
+  </Card>
+  
+  <Card title="Other feature" icon="information">
+    More information you want to share.
+  </Card>
+</CardGrid> -->

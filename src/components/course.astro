@@ -1,0 +1,27 @@
+---
+const {
+    title: title,
+    color: color,
+    description: description,
+    link: link
+    } = Astro.props;
+---
+
+<div class="flex gap-4 items-start">
+    <a href={link} class="block max-w-sm p-6 bg-white rounded-lg shadow-sm hover:bg-gray-100">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
+        <p class="font-normal text-gray-700">{description}</p>
+    </a>
+</div>
+
+<style define:vars={{ color }}>
+    a {
+        background-color: var(--color);
+    }
+    a:hover {
+        box-shadow: 0 0 7px 7px var(--color);
+    }
+    .block {
+      min-height: 150px;
+    }
+</style>

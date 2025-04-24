@@ -1,0 +1,28 @@
+---
+title: Kurspaketet Backend
+description: De kurser som ingår i kurspaketet Backend.
+sidebar:
+    order: 400
+tableOfContents: false
+---
+
+import { CardGrid } from '@astrojs/starlight/components';
+import { backend } from '@components/courses.astro'
+import CustomCard from '@components/CustomCard.astro';
+
+Du läser dessa fyra kurser på halvfart under andra året.
+
+<CardGrid >
+{
+    backend.map((item) => (
+        <CustomCard
+            title={item.title}
+            icon="information"
+            color={item.color}
+            description={item.description}
+            link={item.link}
+            when={item.studyPeriod}
+        />
+    ))
+  }
+</CardGrid>

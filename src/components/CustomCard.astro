@@ -1,0 +1,64 @@
+---
+const {
+    title: title,
+    color: color,
+    description: description,
+    link: link,
+    when: when
+    } = Astro.props;
+---
+
+<article class="card">
+  <a href={link}>
+    <div class="card-content">
+      <h3 class="card-title">
+        {title} ({when})
+      </h3>
+      {description && <p class="card-desc">{description}</p>}
+    </div>
+  </a>
+</article>
+
+<style define:vars={{ color }}>
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    background: var(--color);
+    max-width: 400px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .card-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-desc {
+    margin-top: 0.5rem;
+    color: #555;
+  }
+  a {
+    text-decoration: none;
+  }
+</style>

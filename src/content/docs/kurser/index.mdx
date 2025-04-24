@@ -1,0 +1,54 @@
+---
+title: Översikt
+description: Översikt över de kurser som ingår i programmet och kurspaket.
+sidebar:
+    order: 100
+tableOfContents: false
+---
+
+import { CardGrid } from '@astrojs/starlight/components';
+import { frontend, backend, prog } from '@components/courses.astro'
+import CustomCard from '@components/CustomCard.astro';
+import CustomTable from '@components/CustomTable.astro';
+
+
+<CustomTable>
+  <Fragment slot="header"> 
+    <tr>
+      <th>Kurspaket</th><th>År</th><th>Läsperiod 1</th><th>Läsperiod 2</th><th>Läsperiod 3</th><th>Läsperiod 4</th>
+    </tr>
+  </Fragment>
+
+  <Fragment slot="body">
+    {
+      <tr>
+        <td>Frontend</td>
+        <td>1</td>
+        <td>{frontend[0].title}</td>
+        <td>{frontend[1].title}</td>
+        <td>{frontend[2].title}</td>
+        <td>{frontend[3].title}</td>
+      </tr>
+    }
+    {
+      <tr>
+        <td>Programmering</td>
+        <td>1</td>
+        <td>{prog[0].title}</td>
+        <td>{prog[1].title}</td>
+        <td>{prog[2].title}</td>
+        <td>{prog[3].title}</td>
+      </tr>
+    }
+    {
+      <tr>
+        <td>Backend</td>
+        <td>2</td>
+        <td>{backend[0].title}</td>
+        <td>{backend[1].title}</td>
+        <td>{backend[2].title}</td>
+        <td>{backend[3].title}</td>
+      </tr>
+    }
+  </Fragment>
+</CustomTable>
