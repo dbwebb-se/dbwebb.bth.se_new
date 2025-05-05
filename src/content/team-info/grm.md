@@ -7,5 +7,6 @@ avatar: {
     alt: "Marie Grahn"
 }
 acronym: "grm"
+discord: "@Marie"
 publishDate: "2022-11-07 15:39"
 ---

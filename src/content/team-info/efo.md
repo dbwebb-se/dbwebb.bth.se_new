@@ -7,5 +7,6 @@ avatar: {
     alt: "Emil Folino"
 }
 acronym: "efo"
+discord: "@efo"
 publishDate: "2022-11-07 15:39"
 ---

@@ -7,5 +7,6 @@ avatar: {
     alt: "Mattias Schertell"
 }
 acronym: "msc"
+discord: "@msc"
 publishDate: "2022-11-07 15:39"
 ---

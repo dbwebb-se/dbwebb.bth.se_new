@@ -7,5 +7,6 @@ avatar: {
     alt: "Kenneth Lewenhagen"
 }
 acronym: "klw"
+discord: "@klw"
 publishDate: "2022-11-07 15:39"
 ---

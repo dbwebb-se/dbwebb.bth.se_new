@@ -7,5 +7,6 @@ avatar: {
     alt: "Betty Bergqvist"
 }
 acronym: "bbe"
+discord: "@Betty"
 publishDate: "2022-11-07 15:39"
 ---

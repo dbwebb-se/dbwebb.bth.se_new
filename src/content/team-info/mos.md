@@ -7,5 +7,6 @@ avatar: {
     alt: "Mikael Roos"
 }
 acronym: "mos"
+discord: "@mos"
 publishDate: "2022-11-07 15:39"
 ---

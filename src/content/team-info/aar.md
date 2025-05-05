@@ -7,6 +7,7 @@ avatar: {
     alt: "Andreas Arnesson"
 }
 acronym: "aar"
+discord: "@Zeldah"
 publishDate: "2022-11-07 15:39"
 ---
 
